@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="helloWorld" class="com.spring.basic.HelloWorld"></bean>
+	<bean id="person" class="com.spring.basic.Person">
+		<property name="firstName" value="Himanjan"></property>
+		<property name="lastName" value="Bora"></property>
+	</bean>
+	<bean id="car" class="com.spring.basic.Car">
+		<property name="name" value="BMW"></property>
+		<property name="fuelCost" value="100"></property>
+	</bean>
+	<bean id="user" class="com.spring.basic.User" autowire="byName">
+	</bean>
+</beans>
